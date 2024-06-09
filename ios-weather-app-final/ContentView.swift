@@ -1,86 +1,96 @@
-//
-//  ContentView.swift
-//  ios-weather-app-final
-//
-//  Created by Tomasz Watroba on 09/06/2024.
-//
-
 import SwiftUI
 import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
-    @FetchRequest(
+     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
 
+    @State private var selectedSetting: String? // State variable to track the selected settings option
+    @State private var selectedTemperatureUnit = "Celsius" // State variable to track the selected temperature unit
+    @State private var searchText = "" // State variable to store the search text
+    @State private var weatherData = [("New York", 25.0, "Clear"), ("London", -1.0, "Cloudy"), ("Tokyo", 29.0, "Rainy")]
+    @State private var isFullScreen = false
+    @State private var selectedIndex = 0
+    @State private var isCelsius = true
+
+    @State private var showSettings = false
+
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+            
+            VStack {
+                SearchBar(searchText: $searchText)
+                    .padding()
+                
+                Spacer()
+                
+                if let selectedSetting = selectedSetting {
+                    Text("Selected Setting: \(selectedSetting)")
+                        .padding()
+                }
+                
+                Text("Temperature Unit: \(isCelsius ? "Celsius" : "Fahrenheit")")
+                    .padding()
+                
+                Spacer()
+                ScrollView {
+                    VStack(spacing: 20) {
+                                            ForEach(weatherData.indices, id: \.self) { index in
+                                                WeatherCard(location: weatherData[index].0,
+                                                            temperature: convertTemperature(weatherData[index].1),
+                                                            weatherCondition: weatherData[index].2,
+                                                            onDelete: {
+                                                                weatherData.remove(at: index)
+                                                            },
+                                                            onFullScreen: {
+                                                                self.selectedIndex = index
+                                                                self.isFullScreen.toggle()
+                                                            })
+                                            }
+                                        }
+                                    .padding()
+                                }
+            }
+            .navigationBarTitle("Weather")
+            .navigationBarItems(trailing:
+                Menu {
+                    Button("Option 1") {
+                        selectedSetting = "Edit List"
                     }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    Divider()
+                    Picker("Temperature Unit", selection: $isCelsius) {
+                        Text("°C").tag(true)
+                        Text("°F").tag(false)
                     }
+                    Divider()
+                    Button("Cancel") {}
+                } label: {
+                    Image(systemName: "ellipsis")
+                        .font(.title)
+                        .padding()
                 }
-            }
-            Text("Select an item")
+            )
+            .fullScreenCover(isPresented: $isFullScreen) {
+                            FullScreenView(locations: weatherData, selectedIndex: $selectedIndex, isFullScreen: $isFullScreen, isCelsius: $isCelsius)
+                        }
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+    
+    private func convertTemperature(_ temperature: Double) -> Double {
+            if isCelsius {
+                return temperature
+            } else {
+                return temperature * 9 / 5 + 32
             }
         }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
-#Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
 }
