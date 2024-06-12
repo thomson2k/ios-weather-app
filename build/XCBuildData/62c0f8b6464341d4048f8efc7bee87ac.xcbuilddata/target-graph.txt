@@ -1,0 +1,12 @@
+Target dependency graph (6 targets)
+Target 'ios-weather-app-finalUITests' in project 'ios-weather-app-final'
+➜ Explicit dependency on target 'ios-weather-app-final' in project 'ios-weather-app-final'
+Target 'ios-weather-app-finalTests' in project 'ios-weather-app-final'
+➜ Explicit dependency on target 'ios-weather-app-final' in project 'ios-weather-app-final'
+Target 'ios-weather-app-final' in project 'ios-weather-app-final' (no dependencies)
+Target 'SwiftCSV' in project 'SwiftCSV'
+➜ Explicit dependency on target 'SwiftCSV' in project 'SwiftCSV'
+➜ Explicit dependency on target 'SwiftCSV_SwiftCSV' in project 'SwiftCSV'
+Target 'SwiftCSV' in project 'SwiftCSV'
+➜ Explicit dependency on target 'SwiftCSV_SwiftCSV' in project 'SwiftCSV'
+Target 'SwiftCSV_SwiftCSV' in project 'SwiftCSV' (no dependencies)

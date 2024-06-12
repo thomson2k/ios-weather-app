@@ -1,93 +1,66 @@
 import SwiftUI
 
 struct WeatherCard: View {
-    let location: String
-    let temperature: Double
-    let weatherCondition: String
-    var onDelete: (() -> Void)?
-    var onFullScreen: (() -> Void)?
+    var city: String
+    var country: String
+    var latitude: Double
+    var longitude: Double
+    @Binding var isCelsius: Bool
+    var onDelete: () -> Void
+
+    @State private var temperature: Double?
+    @State private var weatherCondition: String?
+    @State private var isLoading = true
+    @Binding var isFullScreen: Bool
+    @Binding var selectedIndex: Int
 
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 12)
-                .fill(LinearGradient(gradient: backgroundGradient(), startPoint: .top, endPoint: .bottom))
-                .shadow(radius: 4)
-            
-            VStack {
-                Text(location)
-                    .font(.title)
-                    .padding()
-                
-                Text(formattedTemperature(temperature))
+        VStack {
+            if isLoading {
+                ProgressView()
+            } else if let temperature = temperature, let weatherCondition = weatherCondition {
+                Text("\(city), \(country)")
                     .font(.headline)
-                    .padding()
+                Text("\(convertTemperature(temperature)) \(isCelsius ? "°C" : "°F")")
+                    .font(.largeTitle)
+                Text(weatherCondition)
+                    .font(.subheadline)
+            } else {
+                Text("Error loading weather data")
             }
-        }
-        .frame(height: 200)
-        .onTapGesture {
-            self.onFullScreen?()
-        }
-        .swipeActions(edge: .trailing) {
-            Button {
-                self.onDelete?()
-            } label: {
-                Label("Delete", systemImage: "trash")
-            }
-            .tint(.red)
-        }
-    }
-    
-    private func backgroundGradient() -> Gradient {
-        let hour = Calendar.current.component(.hour, from: Date())
-        let timeOfDay: TimeOfDay = {
-            switch hour {
-            case 6..<12: return .morning
-            case 12..<18: return .afternoon
-            case 18..<21: return .evening
-            default: return .night
-            }
-        }()
-        
-        let temperatureCategory: TemperatureCategory = {
-            switch temperature {
-            case ..<10: return .cold
-            case 10..<25: return .warm
-            default: return .hot
-            }
-        }()
-        
-        return gradient(for: timeOfDay, temperatureCategory: temperatureCategory, weatherCondition: weatherCondition)
-    }
-    
-    private func gradient(for timeOfDay: TimeOfDay, temperatureCategory: TemperatureCategory, weatherCondition: String) -> Gradient {
-        // Define your gradients here based on the conditions
-        switch (timeOfDay, temperatureCategory, weatherCondition.lowercased()) {
-        case (.morning, .cold, _): return Gradient(colors: [Color.blue, Color.white])
-        case (.afternoon, .warm, "clear"): return Gradient(colors: [Color.orange, Color.yellow])
-        case (.evening, .hot, _): return Gradient(colors: [Color.purple, Color.blue])
-        case (.night, _, "rainy"): return Gradient(colors: [Color.black, Color.gray])
-        // Add more conditions as needed
-        default: return Gradient(colors: [Color.gray, Color.white])
-        }
-    }
-    
-    private func formattedTemperature(_ temperature: Double) -> String {
-        return "\(Int(temperature))°C"
-    }
-    
-    enum TimeOfDay {
-        case morning, afternoon, evening, night
-    }
-    
-    enum TemperatureCategory {
-        case cold, warm, hot
-    }
-}
 
-struct WeatherCard_Previews: PreviewProvider {
-    static var previews: some View {
-        WeatherCard(location: "San Francisco", temperature: 18.0, weatherCondition: "Clear", onDelete: {}, onFullScreen: {})
-            .previewLayout(.sizeThatFits)
-            .padding()
+            Button(action: onDelete) {
+                Text("Delete")
+                    .foregroundColor(.red)
+            }
+        }
+        .onTapGesture {
+            isFullScreen = true
+            // Set selectedIndex to the index of this weather card
+            // You may need to find the index of this card in the locations array and assign it to selectedIndex
+            // For simplicity, I'm assuming you have a way to get the index directly
+            selectedIndex = 0 // You need to set the correct index here
+        }
+        .onAppear {
+            fetchWeather()
+        }
+    }
+
+    private func convertTemperature(_ temperature: Double) -> Double {
+        if isCelsius {
+            return temperature
+        } else {
+            return temperature * 9 / 5 + 32
+        }
+    }
+
+    private func fetchWeather() {
+        // Your weather fetching logic here
+        // This is just a placeholder
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.isLoading = false
+            self.temperature = 20
+            self.weatherCondition = "Sunny"
+        }
     }
 }

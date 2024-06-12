@@ -1,45 +1,74 @@
-//
-//  SearchBar.swift
-//  weather-app
-//
-//  Created by Tomasz Watroba on 06/06/2024.
-//
-
 import SwiftUI
+import MapKit
 
-struct SearchBar: View {
+struct SearchBar: UIViewRepresentable {
     @Binding var searchText: String
+    @Binding var searchResults: [MKLocalSearchCompletion]
+    @Binding var showSearchResults: Bool
+    var onCitySelected: (String) -> Void
 
-    var body: some View {
-        HStack {
-            TextField("Search for a city", text: $searchText)
-                .padding(7)
-                .padding(.horizontal, 25)
-                .background(Color(.systemGray6))
-                .cornerRadius(8)
-                .padding(.horizontal, 10)
-                .overlay(
-                    HStack {
-                        Image(systemName: "magnifyingglass")
-                            .foregroundColor(.gray)
-                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                            .padding(.leading, 20)
-                        
-                        if !searchText.isEmpty {
-                            Button(action: {
-                                self.searchText = ""
-                            }) {
-                                Image(systemName: "multiply.circle.fill")
-                                    .foregroundColor(.gray)
-                                    .padding(.trailing, 8)
-                            }
-                        }
-                    }
-                )
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+
+    func makeUIView(context: Context) -> UISearchBar {
+        let searchBar = UISearchBar()
+        searchBar.delegate = context.coordinator
+        searchBar.showsCancelButton = true
+        return searchBar
+    }
+
+    func updateUIView(_ uiView: UISearchBar, context: Context) {
+        uiView.text = searchText
+    }
+
+    class Coordinator: NSObject, UISearchBarDelegate, MKLocalSearchCompleterDelegate {
+        var parent: SearchBar
+        var searchCompleter: MKLocalSearchCompleter
+
+        init(_ parent: SearchBar) {
+            self.parent = parent
+            self.searchCompleter = MKLocalSearchCompleter()
+            super.init()
+            self.searchCompleter.delegate = self
         }
-        .padding(.top, 8)
-        .padding(.bottom, 8)
+
+        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            parent.searchText = searchText
+            parent.showSearchResults = !searchText.isEmpty
+            searchCompleter.queryFragment = searchText
+        }
+
+        func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+            parent.searchText = ""
+            parent.showSearchResults = false
+        }
+
+        func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
+            parent.searchResults = completer.results
+        }
+
+        func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+            if let firstResult = parent.searchResults.first {
+                parent.onCitySelected(firstResult.title)
+                parent.showSearchResults = false
+            }
+        }
     }
 }
 
+struct SearchResultListView: View {
+    @Binding var searchResults: [MKLocalSearchCompletion]
+    var onSelect: (MKLocalSearchCompletion) -> Void
 
+    var body: some View {
+        List(searchResults, id: \.self) { result in
+            Button(action: {
+                onSelect(result)
+            }) {
+                Text(result.title)
+                    .foregroundColor(.primary)
+            }
+        }
+    }
+}

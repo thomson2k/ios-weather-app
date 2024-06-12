@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios-weather-app-finalTests-master.dia",
+    "emit-module-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios-weather-app-finalTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios-weather-app-finalTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios-weather-app-finalTests-master.swiftdeps"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-finalTests/ios_weather_app_finalTests.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios_weather_app_finalTests.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios_weather_app_finalTests.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios_weather_app_finalTests.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios_weather_app_finalTests.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios_weather_app_finalTests.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios_weather_app_finalTests.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios_weather_app_finalTests.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-finalTests.build/Objects-normal/arm64/ios_weather_app_finalTests~partial.swiftmodule"
+  }
+}

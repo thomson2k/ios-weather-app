@@ -1,108 +1,128 @@
 import SwiftUI
+import MapKit
+import CoreLocation
 
 struct FullScreenView: View {
-  let locations: [(String, Double, String)]
-  @Binding var selectedIndex: Int
-  @Binding var isFullScreen: Bool
-  @Binding var isCelsius: Bool
+    let locations: [Location]
+    @Binding var selectedIndex: Int
+    @Binding var isFullScreen: Bool
+    @Binding var isCelsius: Bool
 
-  var body: some View {
-    VStack {
-      Spacer()
-
-      if selectedIndex >= 0 && selectedIndex < locations.count {
+    var body: some View {
         VStack {
-          Text(locations[selectedIndex].0)
-            .font(.title)
+            Spacer()
 
-          Text(formattedTemperature(locations[selectedIndex].1))
-            .font(.headline)
+            if selectedIndex >= 0 && selectedIndex < locations.count {
+                VStack {
+                    Text(locations[selectedIndex].city ?? "Unknown")
+                        .font(.title)
+                    
+                    Text(formattedTemperature(locations[selectedIndex].lat))
+                        .font(.headline)
+                }
+                .transition(.slide)
+            }
+
+            Button(action: {
+                // Action to go back to home screen
+                isFullScreen = false
+            }) {
+                Image(systemName: "house.fill")
+                    .foregroundColor(.blue)
+                    .font(.system(size: 24))
+                    .padding()
+            }
+
+            Spacer()
+
+            TabView(selection: $selectedIndex) {
+//                Map(coordinateRegion: $region, showsUserLocation: true)
+//                    .tabItem {
+//                        Label("Maps", systemImage: "map")
+//                    }
+//                    .tag(0)
+
+                Text("")
+                    .tabItem {
+                        Indicators(selectedIndex: $selectedIndex, locations: locations)
+                    }
+                    .tag(1)
+
+                Text("Home")
+                    .tabItem {
+                        Label("Home", systemImage: "list.bullet")
+                    }
+                    .tag(2)
+            }
+            
+            IndicatorDots(selectedIndex: $selectedIndex, count: locations.count)
+                .padding(.bottom)
         }
-        .transition(.slide)
-      }
-
-        Button(action: {
-                            // Action to go back to home screen
-                            isFullScreen = false
-                        }) {
-                            Image(systemName: "house.fill")
-                                .foregroundColor(.blue)
-                                .font(.system(size: 24))
-                                .padding()
+        .background(Color.white.edgesIgnoringSafeArea(.all))
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    if value.translation.width < -100 {
+                        if selectedIndex < locations.count - 1 {
+                            selectedIndex += 1
                         }
-      Spacer()
-
+                    } else if value.translation.width > 100 {
+                        if selectedIndex > 0 {
+                            selectedIndex -= 1
+                        }
+                    }
+                }
+        )
     }
-    .background(Color.white.edgesIgnoringSafeArea(.all))
-    .gesture(
-      DragGesture()
-        .onEnded { value in
-          if value.translation.width < -100 {
-            if selectedIndex < locations.count - 1 {
-              selectedIndex += 1
-            }
-          } else if value.translation.width > 100 {
-            if selectedIndex > 0 {
-              selectedIndex -= 1
-            }
-          }
+
+    private func formattedTemperature(_ temperature: Double) -> String {
+        if isCelsius {
+            return "\(Int(temperature))°C"
+        } else {
+            let fahrenheit = temperature * 9 / 5 + 32
+            return "\(Int(fahrenheit))°F"
         }
-    )
-  }
-
-  private func formattedTemperature(_ temperature: Double) -> String {
-    if isCelsius {
-      return "\(Int(temperature))°C"
-    } else {
-      let fahrenheit = temperature * 9 / 5 + 32
-      return "\(Int(fahrenheit))°F"
     }
-  }
 }
 
-struct BottomBar: View {
-  @Binding var selectedIndex: Int
-  let locations: [(String, Double, String)]
-  @Binding var isFullScreen: Bool
 
-  private let activeColor: Color = .blue
-  private let inactiveColor: Color = .gray
+struct Indicators: View {
+    @Binding var selectedIndex: Int
+    let locations: [Location]
 
-  var body: some View {
-    HStack {
-      Image(systemName: "map")
-        .font(.title)
-        .foregroundColor(.blue)
-
-      Spacer()
-
-      HStack(spacing: 8) {
-        ForEach(0..<locations.count) { index in
-          if index == 0 {
-            Image(systemName: "location.fill")
-              .foregroundColor(index == selectedIndex ? activeColor : inactiveColor)
-          } else {
-            Circle()
-              .fill(index == selectedIndex ? activeColor : inactiveColor)
-              .frame(width: 8, height: 8)
-          }
+    var body: some View {
+        VStack {
+            ForEach(locations.indices, id: \.self) { index in
+                Text(locations[index].city ?? "Unknown")
+                    .onTapGesture {
+                        selectedIndex = index
+                    }
+                    .padding()
+                    .background(selectedIndex == index ? Color.blue.opacity(0.2) : Color.clear)
+                    .cornerRadius(8)
+            }
         }
-      }
-      .padding(.horizontal)
-
-      Spacer()
-      Button(action: {
-        isFullScreen = false  // Exit full-screen view
-      }) {
-        Image(systemName: "list.bullet")
-          .font(.title)
-          .foregroundColor(.blue)
-      }
-
+        .padding()
     }
-    .padding(.vertical, 8)
-    .background(Color.white)
-    .clipShape(RoundedRectangle(cornerRadius: 20))
-    .shadow(radius: 4)
-  }
+}
+
+struct IndicatorDots: View {
+    @Binding var selectedIndex: Int
+    let count: Int
+
+    var body: some View {
+        HStack {
+            ForEach(0..<count, id: \.self) { index in
+                if index == 0 {
+                    Image(systemName: "location.fill")
+                        .foregroundColor(index == selectedIndex ? Color.blue : Color.gray)
+                } else {
+                    Circle()
+                        .fill(index == selectedIndex ? Color.blue : Color.gray)
+                        .frame(width: 8, height: 8)
+                }
+            }
+        }
+        .padding()
+    }
 }

@@ -1,0 +1,208 @@
+{
+  "" : {
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios-weather-app-final-master.dia",
+    "emit-module-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios-weather-app-final-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios-weather-app-final-master-emit-module.dia",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios-weather-app-final-master.swiftdeps"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/DerivedSources/CoreDataGenerated/ios_weather_app_final/ios_weather_app_final+CoreDataModel.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_final+CoreDataModel.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_final+CoreDataModel.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_final+CoreDataModel.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_final+CoreDataModel.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_final+CoreDataModel.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_final+CoreDataModel.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_final+CoreDataModel.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_final+CoreDataModel~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/DerivedSources/CoreDataGenerated/ios_weather_app_final/Item+CoreDataProperties.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/DerivedSources/CoreDataGenerated/ios_weather_app_final/Location+CoreDataProperties.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/AppDelegate.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/ContentView.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/CSVImporter.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/CSVImporter.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/CSVImporter.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/CSVImporter.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/CSVImporter.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/CSVImporter.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/CSVImporter.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/CSVImporter.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/CSVImporter~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/FullScreenView.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/FullScreenView.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/FullScreenView.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/FullScreenView.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/FullScreenView.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/FullScreenView.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/FullScreenView.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/FullScreenView.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/FullScreenView~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/Indicators.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Indicators.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Indicators.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Indicators.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Indicators.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Indicators.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Indicators.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Indicators.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Indicators~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/ios_weather_app_finalApp.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_finalApp.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_finalApp.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_finalApp.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_finalApp.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_finalApp.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_finalApp.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_finalApp.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ios_weather_app_finalApp~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/Persistence.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Persistence.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Persistence.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Persistence.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Persistence.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Persistence.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Persistence.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Persistence.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Persistence~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/SearchBar.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/SearchBar.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/SearchBar.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/SearchBar.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/SearchBar.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/SearchBar.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/SearchBar.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/SearchBar.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/SearchBar~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/ViewController.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ViewController.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ViewController.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ViewController.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ViewController.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ViewController.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ViewController.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ViewController.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/ViewController~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/WeatherAPIManager.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherAPIManager.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherAPIManager.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherAPIManager.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherAPIManager.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherAPIManager.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherAPIManager.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherAPIManager.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherAPIManager~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/WeatherCard.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCard.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCard.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCard.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCard.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCard.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCard.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCard.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCard~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/ios-weather-app-final/WeatherCardFullView.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCardFullView.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCardFullView.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCardFullView.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCardFullView.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCardFullView.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCardFullView.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCardFullView.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/WeatherCardFullView~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/Item+CoreDataClass.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataClass.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataClass.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataClass.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataClass.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataClass.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/Item+CoreDataProperties.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Item+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/Location+CoreDataClass.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataClass.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataClass.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataClass.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataClass.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataClass.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/Location+CoreDataProperties.swift" : {
+    "const-values" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.d",
+    "diagnostics" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.dia",
+    "index-unit-output-path" : "/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.o",
+    "llvm-bc" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.bc",
+    "object" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/tomaszwatroba/Development/STUDIA/IOS/ios-weather-app-final/build/ios-weather-app-final.build/Debug-iphonesimulator/ios-weather-app-final.build/Objects-normal/arm64/Location+CoreDataProperties~partial.swiftmodule"
+  }
+}
