@@ -2,14 +2,14 @@
 //  Location+CoreDataClass.swift
 //  ios-weather-app-final
 //
-//  Created by Tomasz Watroba on 11/06/2024.
+//  Created by Tomasz Watroba on 13/06/2024.
 //
 //
 
 import Foundation
 import CoreData
 
-@objc(Location)
+
 public class Location: NSManagedObject {
 
 }

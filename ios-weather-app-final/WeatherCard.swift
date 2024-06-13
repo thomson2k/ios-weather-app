@@ -46,11 +46,11 @@ struct WeatherCard: View {
         }
     }
 
-    private func convertTemperature(_ temperature: Double) -> Double {
+    private func convertTemperature(_ temperature: Double) -> Int {
         if isCelsius {
-            return temperature
+            return Int(temperature)
         } else {
-            return temperature * 9 / 5 + 32
+            return Int(temperature * 9 / 5 + 32)
         }
     }
 

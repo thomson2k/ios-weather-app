@@ -1,12 +1,16 @@
 import SwiftUI
-import MapKit
-import CoreLocation
 
 struct FullScreenView: View {
     let locations: [Location]
     @Binding var selectedIndex: Int
     @Binding var isFullScreen: Bool
     @Binding var isCelsius: Bool
+
+    // Additional properties for extended weather data
+    @State private var hourlyTemperatures: [HourlyTemperature] = []
+    @State private var dailyForecasts: [DailyForecast] = []
+    @State private var minTemperature: Double?
+    @State private var maxTemperature: Double?
 
     var body: some View {
         VStack {
@@ -19,6 +23,37 @@ struct FullScreenView: View {
                     
                     Text(formattedTemperature(locations[selectedIndex].lat))
                         .font(.headline)
+                    
+                    if let minTemperature = minTemperature, let maxTemperature = maxTemperature {
+                        Text("Min: \(convertTemperature(minTemperature)) \(isCelsius ? "°C" : "°F")")
+                            .font(.subheadline)
+                        Text("Max: \(convertTemperature(maxTemperature)) \(isCelsius ? "°C" : "°F")")
+                            .font(.subheadline)
+                    }
+
+                    Divider()
+
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Hourly Forecast")
+                            .font(.headline)
+                        ForEach(hourlyTemperatures, id: \.time) { hourlyTemp in
+                            Text("\(hourlyTemp.time): \(convertTemperature(hourlyTemp.temperature)) \(isCelsius ? "°C" : "°F")")
+                                .font(.subheadline)
+                        }
+                    }
+                    .padding(.top)
+
+                    Divider()
+
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("7-Day Forecast")
+                            .font(.headline)
+                        ForEach(dailyForecasts, id: \.date) { dailyForecast in
+                            Text("\(dailyForecast.date): \(convertTemperature(dailyForecast.temperature)) \(isCelsius ? "°C" : "°F")")
+                                .font(.subheadline)
+                        }
+                    }
+                    .padding(.top)
                 }
                 .transition(.slide)
             }
@@ -36,12 +71,6 @@ struct FullScreenView: View {
             Spacer()
 
             TabView(selection: $selectedIndex) {
-//                Map(coordinateRegion: $region, showsUserLocation: true)
-//                    .tabItem {
-//                        Label("Maps", systemImage: "map")
-//                    }
-//                    .tag(0)
-
                 Text("")
                     .tabItem {
                         Indicators(selectedIndex: $selectedIndex, locations: locations)
@@ -73,6 +102,9 @@ struct FullScreenView: View {
                     }
                 }
         )
+        .onAppear {
+            fetchWeatherDetails()
+        }
     }
 
     private func formattedTemperature(_ temperature: Double) -> String {
@@ -83,8 +115,42 @@ struct FullScreenView: View {
             return "\(Int(fahrenheit))°F"
         }
     }
-}
 
+    private func convertTemperature(_ temperature: Double) -> Double {
+        if isCelsius {
+            return temperature
+        } else {
+            return temperature * 9 / 5 + 32
+        }
+    }
+
+    private func fetchWeatherDetails() {
+        // Simulated data fetching process, replace with actual weather API integration
+        // This is just a placeholder
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.minTemperature = 15
+            self.maxTemperature = 25
+            self.hourlyTemperatures = [
+                HourlyTemperature(time: "12:00 PM", temperature: 22),
+                HourlyTemperature(time: "1:00 PM", temperature: 23),
+                HourlyTemperature(time: "2:00 PM", temperature: 24),
+                HourlyTemperature(time: "3:00 PM", temperature: 25),
+                HourlyTemperature(time: "4:00 PM", temperature: 24),
+                HourlyTemperature(time: "5:00 PM", temperature: 23),
+                HourlyTemperature(time: "6:00 PM", temperature: 22)
+            ]
+            self.dailyForecasts = [
+                DailyForecast(date: "Monday", temperature: 21),
+                DailyForecast(date: "Tuesday", temperature: 23),
+                DailyForecast(date: "Wednesday", temperature: 24),
+                DailyForecast(date: "Thursday", temperature: 25),
+                DailyForecast(date: "Friday", temperature: 26),
+                DailyForecast(date: "Saturday", temperature: 25),
+                DailyForecast(date: "Sunday", temperature: 24)
+            ]
+        }
+    }
+}
 
 struct Indicators: View {
     @Binding var selectedIndex: Int
@@ -125,4 +191,16 @@ struct IndicatorDots: View {
         }
         .padding()
     }
+}
+
+struct HourlyTemperature: Identifiable {
+    var id = UUID()
+    var time: String
+    var temperature: Double
+}
+
+struct DailyForecast: Identifiable {
+    var id = UUID()
+    var date: String
+    var temperature: Double
 }
