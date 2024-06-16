@@ -7,8 +7,8 @@ struct FullScreenView: View {
     @Binding var isCelsius: Bool
 
     // Additional properties for extended weather data
-    @State private var hourlyTemperatures: [HourlyTemperature] = []
-    @State private var dailyForecasts: [DailyForecast] = []
+    @State private var hourlyTemperatures: [HourlyTemperatureStruct] = []
+    @State private var dailyForecasts: [DailyForecastStruct] = []
     @State private var minTemperature: Double?
     @State private var maxTemperature: Double?
 
@@ -131,22 +131,22 @@ struct FullScreenView: View {
             self.minTemperature = 15
             self.maxTemperature = 25
             self.hourlyTemperatures = [
-                HourlyTemperature(time: "12:00 PM", temperature: 22),
-                HourlyTemperature(time: "1:00 PM", temperature: 23),
-                HourlyTemperature(time: "2:00 PM", temperature: 24),
-                HourlyTemperature(time: "3:00 PM", temperature: 25),
-                HourlyTemperature(time: "4:00 PM", temperature: 24),
-                HourlyTemperature(time: "5:00 PM", temperature: 23),
-                HourlyTemperature(time: "6:00 PM", temperature: 22)
+                HourlyTemperatureStruct(time: "12:00 PM", temperature: 22),
+                HourlyTemperatureStruct(time: "1:00 PM", temperature: 23),
+                HourlyTemperatureStruct(time: "2:00 PM", temperature: 24),
+                HourlyTemperatureStruct(time: "3:00 PM", temperature: 25),
+                HourlyTemperatureStruct(time: "4:00 PM", temperature: 24),
+                HourlyTemperatureStruct(time: "5:00 PM", temperature: 23),
+                HourlyTemperatureStruct(time: "6:00 PM", temperature: 22)
             ]
             self.dailyForecasts = [
-                DailyForecast(date: "Monday", temperature: 21),
-                DailyForecast(date: "Tuesday", temperature: 23),
-                DailyForecast(date: "Wednesday", temperature: 24),
-                DailyForecast(date: "Thursday", temperature: 25),
-                DailyForecast(date: "Friday", temperature: 26),
-                DailyForecast(date: "Saturday", temperature: 25),
-                DailyForecast(date: "Sunday", temperature: 24)
+                DailyForecastStruct(date: "Monday", temperature: 21),
+                DailyForecastStruct(date: "Tuesday", temperature: 23),
+                DailyForecastStruct(date: "Wednesday", temperature: 24),
+                DailyForecastStruct(date: "Thursday", temperature: 25),
+                DailyForecastStruct(date: "Friday", temperature: 26),
+                DailyForecastStruct(date: "Saturday", temperature: 25),
+                DailyForecastStruct(date: "Sunday", temperature: 24)
             ]
         }
     }
@@ -193,14 +193,19 @@ struct IndicatorDots: View {
     }
 }
 
-struct HourlyTemperature: Identifiable {
+struct HourlyTemperatureStruct: Identifiable {
     var id = UUID()
     var time: String
     var temperature: Double
 }
 
-struct DailyForecast: Identifiable {
+struct DailyForecastStruct: Identifiable {
     var id = UUID()
     var date: String
     var temperature: Double
+}
+
+struct LocationStruct {
+    var city: String?
+    var lat: Double
 }

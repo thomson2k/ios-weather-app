@@ -21,6 +21,7 @@ extension Location {
     @NSManaged public var lastUpdatedDate: Date?
     @NSManaged public var lat: Double
     @NSManaged public var lng: Double
+    @NSManaged public var updatedAt: Date?
     @NSManaged public var dailyForecasts: NSSet?
     @NSManaged public var hourlyTemperatures: NSSet?
 

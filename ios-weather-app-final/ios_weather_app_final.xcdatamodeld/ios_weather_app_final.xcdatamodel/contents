@@ -3,12 +3,12 @@
     <entity name="DailyForecast" representedClassName=".DailyForecast" syncable="YES">
         <attribute name="date" optional="YES" attributeType="String"/>
         <attribute name="temperature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="dailyForecasts" inverseEntity="Location"/>
     </entity>
     <entity name="HourlyTemperature" representedClassName=".HourlyTemperature" syncable="YES">
         <attribute name="temperature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="time" optional="YES" attributeType="String"/>
-        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="hourlyTemperatures" inverseEntity="Location"/>
     </entity>
     <entity name="Location" representedClassName=".Location" syncable="YES">
         <attribute name="city" optional="YES" attributeType="String"/>
@@ -16,7 +16,8 @@
         <attribute name="lastUpdatedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="lng" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="dailyForecasts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DailyForecast"/>
-        <relationship name="hourlyTemperatures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HourlyTemperature"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="dailyForecasts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DailyForecast" inverseName="location" inverseEntity="DailyForecast"/>
+        <relationship name="hourlyTemperatures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HourlyTemperature" inverseName="location" inverseEntity="HourlyTemperature"/>
     </entity>
 </model>
