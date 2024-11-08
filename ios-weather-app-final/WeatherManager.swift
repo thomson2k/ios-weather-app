@@ -3,7 +3,7 @@
     import CoreLocation
 
     class WeatherManager {
-        private let apiKey = "a7d08e48498c5a4149fa3f6f28f04b5f"
+        private let apiKey = ""
 
         func fetchWeather(latitude: Double, longitude: Double, completion: @escaping (Result<WeatherResponse, Error>) -> Void) {
             let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric"
